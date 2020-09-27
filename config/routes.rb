@@ -6,4 +6,5 @@ Rails.application.routes.draw do
     get 'users', to: 'users/registrations#new'
   end
 
+  root 'hairdresseis#index'
 end
