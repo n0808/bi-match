@@ -1,4 +1,5 @@
 class Hairdresser < ApplicationRecord
+  belongs_to :user
   has_many :images, dependent: :destroy
   accepts_nested_attributes_for :images, allow_destroy: true
   validates_associated :images
@@ -12,5 +13,11 @@ class Hairdresser < ApplicationRecord
   validates :gender_id, presence: true
   validates :technique_id, presence: true
   validates :history_id, presence: true
-  
+
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to_active_hash :prefecture
+  belongs_to_active_hash :gender
+  belongs_to_active_hash :technique
+  belongs_to_active_hash :history
+
 end
