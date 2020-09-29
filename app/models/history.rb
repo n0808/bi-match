@@ -14,5 +14,5 @@ class History < ActiveHash::Base
   add id: 11, choice: "11年"
   add id: 12, choice: "12年"
   
-  has_many :hairdressis
+  has_many :hairdressers
 end

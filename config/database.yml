@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: bi_match_production
-  username: bi_match
-  password: <%= ENV['BI_MATCH_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock

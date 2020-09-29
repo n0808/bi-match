@@ -2,6 +2,14 @@ $white: #fff;
 $gray: #f8f8f8;
 $blue: #3ccace;
 
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
 .Pickup {
   background-color: $gray;
   padding-top: 100px;

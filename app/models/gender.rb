@@ -4,5 +4,5 @@ class Gender < ActiveHash::Base
   add id: 1, choice: "男性"
   add id: 2, choice: "女性"
 
-  has_many :hairdressis
+  has_many :hairdressers
 end

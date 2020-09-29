@@ -6,5 +6,5 @@ class User < ApplicationRecord
 
   validates :name, presence: true, uniqueness: true
   validates :password, length: { minimum: 7 }
-  has_many :hairdressis
+  has_many :hairdressers
 end

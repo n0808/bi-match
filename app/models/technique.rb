@@ -6,5 +6,5 @@ class Technique < ActiveHash::Base
   add id: 3, choice: "カット＋パーマ"
   add id: 4, choice: "カット＋カラー＋パーマ"
   
-  has_many :hairdressis
+  has_many :hairdressers
 end
